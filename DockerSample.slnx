@@ -1,0 +1,9 @@
+<Solution>
+	<Folder Name="/src/">
+		<Project Path="src/BlazorWebApp.Api/BlazorWebApp.Api.csproj" Id="b6a9d95f-f8a1-49ff-9782-a59ac09881b1" />
+		<Project Path="src/BlazorWebApp/BlazorWebApp.csproj" />
+	</Folder>
+	<Project Path="docker-compose.dcproj">
+		<Build />
+	</Project>
+</Solution>

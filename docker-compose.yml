@@ -1,0 +1,20 @@
+services:
+  blazorwebapp:
+    image: ${DOCKER_REGISTRY-}blazorwebapp
+    container_name: mk_test
+    build:
+      context: .
+      dockerfile: src/BlazorWebApp/Dockerfile
+    ports:
+        - "5000:5000"
+        - "5001:5001"
+
+  blazorwebapp.api:
+    image: ${DOCKER_REGISTRY-}blazorwebapp.api
+    container_name: mk_test_api
+    build:
+      context: .
+      dockerfile: src/BlazorWebApp.Api/Dockerfile
+    ports:
+        - "5002:5002"
+        - "5003:5003"
